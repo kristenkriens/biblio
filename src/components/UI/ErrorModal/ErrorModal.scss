@@ -1,0 +1,59 @@
+@import '../../../shared/styles/variables';
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 350px;
+  background-color: $white;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+  z-index: 110;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  button {
+    position: absolute;
+    font-size: 14px;
+    padding: 5px;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    margin-top: 0;
+
+    span.close {
+      position: relative;
+      top: -3px;
+    }
+  }
+}
+
+.modal-enter {
+  opacity: 0;
+  transform: translate(-50%, calc(-50% + 50px)) !important;
+  transition: all 500ms ease-in-out;
+}
+
+.modal-enter-active {
+  opacity: 1;
+  transform: translate(-50%, -50%) !important;
+  transition: all 500ms ease-in-out;
+}
+
+.modal-exit {
+  opacity: 0;
+  transform: translate(-50%, -50%) !important;
+	transition: all 250ms ease-in-out;
+}
+
+.modal-exit-active {
+  opacity: 0;
+  transform: translate(-50%, calc(-50% + 50px)) !important;
+  transition: all 250ms ease-in-out;
+}
