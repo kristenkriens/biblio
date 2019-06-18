@@ -4,7 +4,7 @@ const BookItem = (props) => {
   const { label, text, alert } = props;
 
   return (
-    <div className={`book__bottom-item ${alert && 'book__bottom-item--alert'}`}>
+    <div className={`book__content-item ${alert && 'book__content-item--alert'}`}>
       <span className="bold">{label}:</span> {text}
     </div>
   )

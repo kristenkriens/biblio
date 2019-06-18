@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Loading.scss';
 
-import Logo from '../../../assets/logo.svg';
+import Logo from '../../../logo.svg';
 
 const Loading = () => {
   return (

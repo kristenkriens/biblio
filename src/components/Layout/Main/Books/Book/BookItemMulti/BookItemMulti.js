@@ -9,7 +9,7 @@ const BookItemMulti = (props) => {
   ));
 
   return (
-    <div className="book__bottom-item">
+    <div className="book__content-item">
       <span className="bold">{label}{items.length > 1 && 's'}:</span> {itemList.join(', ')}
     </div>
   )

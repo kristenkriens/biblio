@@ -2,37 +2,51 @@
 
 .book {
   font-size: 14px;
-  background-color: $white;
-  width: calc(20% - 20px);
-  margin: 10px;
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+  background-color: $light-grey;
+  width: calc(20% - 30px);
+  margin: 15px;
   max-width: 300px;
 
   @media (max-width: $xl-width-plus) {
-    width: calc(25% - 20px);
+    width: calc(25% - 30px);
   }
 
   @media (max-width: $lg-width-plus) {
-    width: calc(calc(100% / 3) - 20px);
+    width: calc(calc(100% / 3) - 30px);
   }
 
   @media (max-width: $md-width-plus) {
-    width: calc(50% - 20px);
+    width: calc(50% - 30px);
   }
 
   @media (max-width: $sm-width-plus) {
     width: 100%;
   }
 
-  &__top {
+  &__image {
+    border-bottom: 3px solid $black;
+    height: 300px;
+    position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 300px;
   }
 
-  &__bottom {
-    padding: 20px;
+  &__rating {
+    background-color: $black;
+    color: $white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 10px;
+
+    &-count {
+      font-size: 11px;
+    }
+  }
+
+  &__content {
+    padding: 15px 20px;
 
     h2 {
       margin-bottom: 15px;
